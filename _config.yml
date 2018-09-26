@@ -279,3 +279,18 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/kbaries"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zenkbaries"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/kbaries"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:kbaries@gmail.com"
