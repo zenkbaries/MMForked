@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: Under the Christmas Tree
 date: 2016-01-15
 tags:
