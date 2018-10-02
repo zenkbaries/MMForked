@@ -2,4 +2,9 @@
 layout:
 ---
 
-Restoring your macOS to factory setting
+# Restoring your macOS to factory setting
+
+1. First backup all data:
+- Backup to Time Machine
+- Backup to iCloud
+- Backup to Google Sync
