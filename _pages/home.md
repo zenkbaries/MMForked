@@ -14,6 +14,7 @@ feature_row:
   - image_path: /assets/images/code.png
     alt: "coding"
     title: "Blog"
+    title_align: center
     #excerpt:
     url: "/docs/configuration/"
     btn_label: "Learn More"
@@ -36,5 +37,6 @@ github:
 ---
 
 <!-- {% include feature_row id="intro" type="center" %} -->
+{% include feature_row type="center" %}
 
 {% include feature_row %}
