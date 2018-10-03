@@ -1,5 +1,6 @@
 ---
-layout:
+layout: null
+published: true
 ---
 
 # Restoring your macOS to factory setting
@@ -8,3 +9,10 @@ layout:
 - Backup to Time Machine
 - Backup to iCloud
 - Backup to Google Sync
+
+2. Restore to factory setting
+	- restart while holding down Command-R
+    - choose to reboot on
+    
+    
+3.	
