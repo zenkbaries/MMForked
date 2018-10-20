@@ -32,11 +32,8 @@
         {% endif %}
 
         <div class="archive__item-body">
-
           {% if f.title %}
-            { if f.title_align %}
-            <h2 class="archive__item-title {% if f.title_align %}archive__item-title_align--{{ f.title_align }}{% endif %}">{{ f.title }}</h2>
-            <p>{{ f.title }} This</p>
+            <h2 class="archive__item-title">{{ f.title }}</h2>
           {% endif %}
 
           {% if f.excerpt %}
