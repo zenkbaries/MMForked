@@ -14,7 +14,7 @@ feature_row:
   - image_path: /assets/images/code.png
     alt: "coding"
     title: "Blog"
-    body_align: center
+    title_align: center
     #excerpt:
     #url: "/docs/configuration/"
     #btn_label: "Learn More"
