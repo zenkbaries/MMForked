@@ -3,6 +3,8 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Blogs"
     url: /blogs/
+  - title: "Portfolios"
+    url: /portfolios/
   # - title: "Categories"
   #   url: /categories/
   # - title: "Tags"
