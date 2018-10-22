@@ -1,6 +1,10 @@
 ---
-layout: null
+layout: default
 published: true
+tags:
+  - learning
+  - experience
+  - macOS
 ---
 
 # Restoring your macOS to factory setting
@@ -13,6 +17,6 @@ published: true
 2. Restore to factory setting
 	- restart while holding down Command-R
     - choose to reboot on
-    
-    
-3.	
+
+
+3.
