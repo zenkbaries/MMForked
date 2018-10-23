@@ -1,0 +1,101 @@
+/* BouncingDot CSS */
+
+
+/* body {
+  background-color: #999;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 25px;
+  padding: 50px;
+}
+
+.myCanvas {
+  margin: auto;
+  width: 100%;
+} */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  background: #F5F5F5;
+  color: #444;
+  font-family: "Helvetica Neue", Arial, serif;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+section {
+  background-color: #fff;
+  margin: 25px;
+  padding: 25px;
+}
+
+.description {
+  padding: 25px 0;
+}
+
+canvas {
+  /* height: 525px;
+  width: 1067px; */
+  /* padding: 25px; */
+  width: 100%;
+  /* margin: auto; */
+  display: block;
+}
+
+canvas_wrapper {
+  /* margin: auto; */
+}
+
+pre {
+  background: #ccc;
+}
+
+.navigation {
+  background: #999;
+  width: 250px;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #555;
+}
+
+.navigation ul li {
+  text-align:center;
+  border-bottom: 1px solid #555;
+}
+
+.navigation ul li:last-child {
+  border-bottom: none;
+}
+
+.navigation ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.navigation ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: #777;
+    color: white;
+}
+
+.main {
+  background: #DDD;
+  width: 100%;
+}
