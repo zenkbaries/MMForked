@@ -1,4 +1,5 @@
 ---
+layout: posts
 title: Starting Ruby on Rails
 date: 2016-03-04
 tags:
