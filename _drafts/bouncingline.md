@@ -1,5 +1,9 @@
 ---
+layout: canvas
 title: Bouncing Line
+css: canvas
+js: bouncingline
+description:
 tags:
   - coding
   - javascript

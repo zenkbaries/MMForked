@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: canvas
 title: Raindrop
+css: canvas
+js: raindrop_motion
+description: This code is a raindrop animation I created to mimic raindrop on water with ripples fading as it radiate out.
 tags:
     - javascript
     - canvas
