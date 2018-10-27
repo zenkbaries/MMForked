@@ -1,0 +1,24 @@
+---
+layout: posts
+---
+
+
+<section class="canvas_section">
+
+  <canvas id="myCanvas">
+    {% if page.js %}
+    <script src="/assets/js/{{ page.js }}.js"></script>
+    {% endif %}
+  </canvas>
+
+  {% if page.description %}
+    <div class="canvas_description">
+      <p>
+        {{ page.description }}
+      </p>
+    </div>
+  {% endif %}
+
+</section>
+
+{{ content }}
