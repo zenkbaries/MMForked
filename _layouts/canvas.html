@@ -2,42 +2,23 @@
 layout: posts
 ---
 
-<h2>{{ page.title }}</h2>
-<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
 
-<section>
-  {% if page.description %}{% endif %}
-  <div class="description">
-    <p>
-      {{ page.description }}
-    </p>
-  </div>
-  {% endif %}
-  <div class="canvas_wrapper">
-    <canvas id="myCanvas">
-    <script src="js/raindrop_motion.js"></script>
+<section class="canvas_section">
+
+  <canvas id="myCanvas">
+    {% if page.js %}
+    <script src="/assets/js/{{ page.js }}.js"></script>
+    {% endif %}
   </canvas>
-    <p>
-      Simple Raindrop animation
-    </p>
-  </div>
-  <div class="code_block">
-    <pre>
-    <code>
-      // Raindrops class
-      function Raindrops() {
-        this.x    = Math.round(Math.random() * c.width);
-        this.y    = Math.round(Math.random() * c.height);
-        this.r    = Math.round(Math.random() * r);
-        this.age  = 0;
-      }
-    </code>
-  </pre>
 
-  </div>
-  <div>
-    There is a screensaver of this code. It's written in Objective-C for macOS. The code is located <a href="https://github.com/zenkbaries/RainDrops">here.</a>
-  </div>
+  {% if page.description %}
+    <div class="canvas_description">
+      <p>
+        {{ page.description }}
+      </p>
+    </div>
+  {% endif %}
+
 </section>
 
 {{ content }}
