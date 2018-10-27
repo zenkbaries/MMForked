@@ -5,11 +5,14 @@ css: canvas
 js: bouncingdot
 description:
 tags:
-  - coding
-  - javascript
-  - animation
-  - canvas
+
+-   coding
+-   javascript
+-   animation
+-   canvas
 ---
+
+
 ```html
 <div class="main">
     <header>
