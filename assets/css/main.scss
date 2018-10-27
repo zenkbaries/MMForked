@@ -12,6 +12,15 @@
   text-align: center;
 }
 
-canvas {
+.canvas_section {
   display: block;
+  padding: 25px 0;
+}
+
+.canvas_description {
+  font-size: .7em;
+}
+
+pre.hightlight {
+  margin-top: 100px;
 }
