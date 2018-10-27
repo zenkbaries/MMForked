@@ -1,5 +1,5 @@
 ---
-layout: canvas
+canvas: true
 title: Raindrops
 css: canvas
 js: raindrop_motion
@@ -11,7 +11,6 @@ tags:
     - coding
 ---
 
-This code is a raindrop animation I created to mimic raindrop on water with ripples fading as it radiate out.
 
 Simple Raindrop animation
 
@@ -25,4 +24,7 @@ function Raindrops() {
 }
 ```
 
-There is a screensaver of this code. It's written in Objective-C for macOS. The code is located here.
+
+
+
+<!-- There is a screensaver of this code. It's written in Objective-C for macOS. The code is located here. -->
