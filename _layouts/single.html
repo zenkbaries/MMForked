@@ -42,26 +42,9 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {% if page.canvas %}
-          <section class="canvas_section">
 
-            <canvas id="myCanvas">
-              {% if page.js %}
-              <script src="/assets/js/{{ page.js }}.js"></script>
-              {% endif %}
-            </canvas>
+        {% include canvas.html %}
 
-            {% if page.description %}
-              <div class="canvas_description">
-                <p>
-                  {{ page.description }}
-                </p>
-              </div>
-            {% endif %}
-
-          </section>
-
-        {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

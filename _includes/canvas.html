@@ -1,24 +1,20 @@
----
-layout: posts
----
+<!-- // Canvas // -->
+{% if page.canvas %}
+  <section class="canvas_section">
 
+    <canvas id="myCanvas">
+      {% if page.js %}
+      <script src="/assets/js/{{ page.js }}.js"></script>
+      {% endif %}
+    </canvas>
 
-<section class="canvas_section">
-
-  <canvas id="myCanvas">
-    {% if page.js %}
-    <script src="/assets/js/{{ page.js }}.js"></script>
+    {% if page.description %}
+      <div class="canvas_description">
+        <p>
+          {{ page.description }}
+        </p>
+      </div>
     {% endif %}
-  </canvas>
-
-  {% if page.description %}
-    <div class="canvas_description">
-      <p>
-        {{ page.description }}
-      </p>
-    </div>
-  {% endif %}
-
-</section>
-
-{{ content }}
+  </section>
+{% endif %}
+<!-- // end Canvas // -->
