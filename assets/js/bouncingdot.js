@@ -6,8 +6,8 @@
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 var bgColor = "#000000";
-var scrW = window.innerWidth;
-var scrH = window.innerHeight;
+var screenWidth = window.innerWidth;
+var screenHeight = window.innerHeight;
 
 // set canvas size
 c.width = window.innerWidth;
@@ -23,10 +23,10 @@ ctx.clearRect(0, 0, c.width, c.height);
 
 //  Declaration
 
-var dotColor = "#FFFFFF";
-var dotSize = 5;
-var dirX = 10;
-var dirY = 10;
+var dotColor = "#FFFFFF"; // color of the dot
+var dotSize = 5;  // size of dot in "pixel diameter"
+var dirX = 10; // speed of the dot's movement along x-axis
+var dirY = 10; // speed of the dot's movement along y-axis
 
 // // Dot class
 // class Dots {
@@ -38,29 +38,39 @@ var dirY = 10;
 //   }
 // }
 
+// Dot "class" ///////////
 function Dots() {
   this.x = Math.round(Math.random() * c.width);
   this.y = Math.round(Math.random() * c.height);
-
 }
+///////////////////////
 
-// Initialize dot
+
+
+// Initialize dot///////
 var dot = new Dots;
-// draw Dots
+////////////////////////
 
+// draw Dots
 function drawDots(objDot) {
   // fade = (dR-dAge)/dR;
   // ctx.globalAlpha = fade;
   ctx.fillStyle = dotColor;
   ctx.beginPath();
   ctx.strokeStyle = dotColor;
-  ctx.arc(objDot.x, objDot.y, dotSize, 0, 2 * Math.PI);
+  ctx.arc(objDot.x, objDot.y, /// Location of dot on canvas
+          dotSize, // size of dot
+          0, // starting angel
+          2 * Math.PI // ending angel
+        );
   ctx.fill();
   ctx.closePath();
   // ctx.globalAlpha = 1.0;
 }
 
-// draw - where animation is
+/////////////////////////
+// draw/animate  ////////
+/////////////////////////
 
 function draw() {
 
@@ -69,18 +79,21 @@ function draw() {
   ctx.fillStyle = bgColor;
   ctx.fillRect(0, 0, c.width, c.height);
 
-  if ((dot.x <= 0) || (dot.x >= scrW)) {
-    dirX = dirX * -1;
+  // has dot hit the boundry? //
+  if ((dot.x <= 0) || (dot.x >= screenWidth)) {
+    dirX = dirX * -1; // reverse direction
+  }
+  if ((dot.y <= 0) || (dot.y >= screenHeight)) {
+    dirY = dirY * -1; //reverse direction
   }
 
-  if ((dot.y <= 0) || (dot.y >= scrH)) {
-    dirY = dirY * -1;
-  }
-
+  //  move the dot's position
   dot.x = dot.x + dirX;
   dot.y = dot.y + dirY;
 
+  // draw the dot on screen
   drawDots(dot);
+
 
   // add new Drops to array after delay
   // if (count >= 5) {
@@ -105,17 +118,12 @@ function draw() {
 
 
 
-//
-//   drawing
-//
-
-
-
-//
-//  Animation
-//
+//////////////////////////
+//   drawing/Animation  //
+//////////////////////////
 
 // Initalize the animationFrame
+//  it gets the browser's own timeloop animation API
 window.requestAnimFrame = (
   function() {
     return window.requestAnimationFrame ||
@@ -129,8 +137,8 @@ window.requestAnimFrame = (
 
 // animate function
 function animate() {
-  requestAnimFrame(animate);
-  draw();
+  requestAnimFrame(animate);  // starts the animation loop
+  draw();  // draw on the canvas at each iteration
 }
 
 //start animation
