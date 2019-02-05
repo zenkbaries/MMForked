@@ -295,3 +295,15 @@ footer:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:kbaries@gmail.com"
+
+atom:
+  buildCommand:
+    - /Users/kellyboy/.rbenv/shims/bundle
+    - exec
+    - /Users/kellyboy/.rbenv/shims/jekyll
+    - build
+  buildEnv:
+    JEKYLL_ENV: development
+  postDirs:
+    - posts
+  defaultPostDir: _drafts
