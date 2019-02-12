@@ -247,7 +247,6 @@ DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
   jekyll-include-cache
-  jekyll-remote-theme
 
 BUNDLED WITH
    1.16.5
