@@ -78,8 +78,8 @@ naver_site_verification  :
 # Social Sharing
 # github_uername           : "zenkbaries"
 # github                   : [metadata]
-twitter:
-  username               : "kbaries"
+# twitter:
+#   username               : "kbaries"
 facebook:
   username               :
   app_id                 :
